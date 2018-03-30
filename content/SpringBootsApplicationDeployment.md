@@ -50,6 +50,11 @@ Updating c9d7699..cf23059
 ```
 你得到的是新启动进程的PID。
 
+如果在普通用户下，占用低端端口需要`sudo`。
+```
+$ sudo java -jar redflower-0.0.1-SNAPSHOT.jar --server.port=80 1>log 2>&1 &
+```
+
 ### 查看文件记录的输出
 ```
 # tail -n 100 log
