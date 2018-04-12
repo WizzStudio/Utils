@@ -62,3 +62,13 @@ $ sudo java -jar redflower-0.0.1-SNAPSHOT.jar --server.port=80 1>log 2>&1 &
 省略了所有结果。
 
 一般指定最后100行就可以看到最后一个异常打印出的所有堆栈信息。
+
+### 关闭终端（SSH断开）后服务自动关闭，解决方案：screen
+
+进入到启动服务的目录下，输入命令`screen`然后进入一个clear后的终端页面，执行部署命令
+
+```
+java -jar redflower-0.0.1-SNAPSHOT.jar 1>log 2>&1 &
+```
+
+然后先control + A，再按D，就退出screen模式，这个时候关闭终端连接，就可以避免服务被关闭了，下次ssh连接时，可以用`screen -ls`来查看后台运行的进程。
