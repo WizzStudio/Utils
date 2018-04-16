@@ -50,6 +50,11 @@ Updating c9d7699..cf23059
 ```
 你得到的是新启动进程的PID。
 
+如果你在使用zsh（或其它）作为shell，需要将命令传送给bash执行，否则在会话结束后进程将被杀死。
+```
+# bash -c "java -jar redflower-0.0.1-SNAPSHOT.jar 1>log 2>&1 &"
+```
+
 如果在普通用户下，占用低端端口需要`sudo`。
 ```
 $ sudo java -jar redflower-0.0.1-SNAPSHOT.jar --server.port=80 1>log 2>&1 &
