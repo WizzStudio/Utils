@@ -8,4 +8,6 @@ Tips which you should know about system maintenance.
 - [SpringBoot's Application Deployment](https://github.com/TGclub/Utils/blob/master/be/SpringBootsApplicationDeployment.md)
 ### 运维
 - [服务器一键配置](https://github.com/TGclub/Utils/blob/master/op/server-init.sh)
+- 服务器集群管理 [AppNode](https://www.appnode.com/)
+- 服务器单机管理 [宝塔](https://www.bt.cn/)
 
