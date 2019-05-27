@@ -60,7 +60,7 @@ gpgcheck=0\n\
 enabled=1" > /etc/yum.repos.d/nginx.repo
     yum -y install nginx
     chmod u+s /usr/sbin/nginx  # 使非root也可以配置NGINX
-    chmod -r 777 /etc/nginx/conf.d
+    chmod -R 777 /etc/nginx/conf.d
     nginx  # 不能使用service，因为子用户没有service权限
 fi
 
